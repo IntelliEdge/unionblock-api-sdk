@@ -1,0 +1,1 @@
+OTC_API_URL = 'https://api.unionblock.pro/api/v1'
