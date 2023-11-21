@@ -4,6 +4,10 @@
 
 **Postman colleciton:** If you wish to use a Postman collection instead please  [click here.](https://github.com/IntelliEdge/unionblock-api-sdk/tree/main/postman_examples)
 
+For **SDK examples** please [click here.](https://github.com/IntelliEdge/unionblock-api-sdk/tree/main/examples)
+
+---
+
 The UnionBlock SDK provides a convenient way to interact with the UnionBlock API for OTC (Over-the-Counter) trading.
 
 ## Installation
