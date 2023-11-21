@@ -1,5 +1,7 @@
 # UnionBlock SDK
 
+**NO SDK Note**: If you wish to see the example API calls, which don't require you to use SDK, please [click here.](https://github.com/IntelliEdge/unionblock-api-sdk/tree/main/standalone_examples)
+
 The UnionBlock SDK provides a convenient way to interact with the UnionBlock API for OTC (Over-the-Counter) trading.
 
 ## Installation
