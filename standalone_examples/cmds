@@ -1,0 +1,26 @@
+python3.10 send_signed_request.py \
+"http://192.168.100.28:8081/api/transactions/" \
+"POST" \
+"{\"transaction_id\": \"test23\", \"amount\": \"54\", \"description\": \"test23\"}" \
+"private_key.pem" \ "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5NzcxOTQ2LCJpYXQiOjE2ODk3NzE2NDYsImp0aSI6IjAxNmMyMzEwNTdiOTRkOTg5Mjg1NzQ4MTczNzNhM2Q3IiwidXNlcl9pZCI6NH0.kYA6U3AGTCvTmhfZi67sz-wTmWqB1Rfx5gX8wkm3kHE"
+
+
+python3.10 sign_data.py \
+"{\"transaction_id\": \"test23\", \"amount\": \"54\", \"description\": \"test23\"}" \
+"private_key.pem"
+
+
+python3.10 send_hashed_request.py \
+"http://192.168.100.28:8081/api/transactions/" \
+"POST" \
+"{\"transaction_id\": \"test23\", \"amount\": \"54\", \"description\": \"test23\"}" \
+"1a9a3175-d292-4c24-bae7-0b618b8b1d95" \
+"d0b61f32-ef7e-481c-ba61-3b11453b0b1e" \
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMjcyODcxLCJpYXQiOjE2OTAyNzI1NzEsImp0aSI6IjI1MDJjOWQ0YWNkMzQ3NDFhNDY1ZWFjNDE5ZDNmOWFhIiwidXNlcl9pZCI6Mn0.FJH5qqVQcaL7eVj3YO96PUjh5A0iMtWsiOi_RLSpoaI"
+
+
+python3.10 hash_data.py \
+"http://dev-otc.trebuchet.network/api/transactions/" \
+"POST" \
+"{\"transaction_id\": \"test23\", \"amount\": \"54\", \"description\": \"test23\"}" \
+"bebb91ae-fd20-47e7-9bf8-b994c9084b73"
